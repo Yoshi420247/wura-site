@@ -131,6 +131,7 @@ var WURA_PRODUCTS = {
 };
 
 (function(){
+  if(!document.getElementById("pTitle")) return; /* only render on the PDP */
   var id=new URLSearchParams(location.search).get("id");
   var d=WURA_PRODUCTS[id]||WURA_PRODUCTS["burmese-body-wave"];
   function txt(i,v){var e=document.getElementById(i);if(e)e.textContent=v;}

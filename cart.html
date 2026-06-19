@@ -30,22 +30,22 @@
     <div class="checkout-block reveal">
       <h2>Your look</h2>
       <div class="cart-item">
-        <figure class="ph develop"><img src="assets/product-wig-stand.jpg" alt="Burmese Body Wave 24 inch"/></figure>
+        <figure class="ph develop"><img id="ciHairImg" src="assets/product-wig-stand.jpg" alt="Hair"/></figure>
         <div>
-          <h3>Burmese Body Wave 24″</h3>
-          <div class="ci-meta">Aṣọ Hair · Lekki, Lagos · HD frontal 13×4</div>
+          <h3 id="ciHairTitle">Burmese Body Wave 24″</h3>
+          <div class="ci-meta" id="ciHairMeta">Aṣọ Hair · Lekki, Lagos</div>
           <div class="ci-sub"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 13 4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Wura-Verified · authenticity checked</div>
         </div>
-        <div class="ci-right"><span class="tnum" style="font-weight:600" data-ngn="₦196,000" data-usd="$128">₦196,000</span><button class="link-muted" data-remove>Remove</button></div>
+        <div class="ci-right"><span class="tnum" id="ciHairPrice" style="font-weight:600" data-ngn="₦196,000" data-usd="$128">₦196,000</span><button class="link-muted" data-remove>Remove</button></div>
       </div>
       <div class="cart-item">
-        <figure class="ph develop"><img src="assets/stylist-adaeze.jpg" alt="Adaeze O."/></figure>
+        <figure class="ph develop"><img src="assets/stylist-adaeze.jpg" alt="Stylist"/></figure>
         <div>
-          <h3>Frontal install</h3>
-          <div class="ci-meta">Adaeze O. · Lekki, Lagos · Sat 13 June, 11:00 AM</div>
-          <div class="ci-sub"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 13 4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Wura-Verified stylist · 4.9 ★</div>
+          <h3 id="ciInstallTitle">Frontal install</h3>
+          <div class="ci-meta" id="ciInstallMeta">Adaeze O., Lekki · Sat 13 June, 11:00 AM</div>
+          <div class="ci-sub"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 13 4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Wura-Verified stylist</div>
         </div>
-        <div class="ci-right"><span class="tnum" style="font-weight:600" data-ngn="₦52,000" data-usd="$34">₦52,000</span><button class="link-muted" data-remove>Remove</button></div>
+        <div class="ci-right"><span class="tnum" id="ciInstallPrice" style="font-weight:600" data-ngn="₦52,000" data-usd="$34">₦52,000</span><button class="link-muted" data-remove>Remove</button></div>
       </div>
       <p style="font-size:13px;color:var(--muted);margin-top:14px">Bringing your own hair? You can <a href="stylists.html" style="color:var(--gold-deep);text-decoration:underline">book the install on its own</a>.</p>
     </div>
@@ -74,7 +74,7 @@
       <div class="appt">
         <figure class="ph develop"><img src="assets/stylist-adaeze.jpg" alt="Adaeze O."/></figure>
         <div style="flex:1">
-          <div style="font-family:var(--serif);font-size:17px">Adaeze O. · Glueless install + styling</div>
+          <div style="font-family:var(--serif);font-size:17px" id="apptName">Adaeze O. · Glueless install + styling</div>
           <div style="font-size:13.5px;color:var(--muted);margin-top:3px">Saturday 13 June, 11:00 AM · Lekki, Lagos · 3 hrs</div>
         </div>
         <a href="stylist.html" class="link-muted">Change</a>
@@ -94,12 +94,12 @@
   <aside>
     <div class="summary reveal d1">
       <h3>Order summary</h3>
-      <div class="row"><span>Burmese Body Wave 24″</span><span class="tnum" data-ngn="₦196,000" data-usd="$128">₦196,000</span></div>
-      <div class="row"><span>Frontal install · Adaeze O.</span><span class="tnum" data-ngn="₦52,000" data-usd="$34">₦52,000</span></div>
+      <div class="row"><span id="sumHair">Burmese Body Wave 24″</span><span class="tnum" id="sumHairPrice" data-ngn="₦196,000" data-usd="$128">₦196,000</span></div>
+      <div class="row"><span id="sumInstall">Frontal install · Adaeze O.</span><span class="tnum" id="sumInstallPrice" data-ngn="₦52,000" data-usd="$34">₦52,000</span></div>
       <div class="row"><span>Delivery (Lagos)</span><span style="color:var(--verdigris);font-weight:600">Complimentary</span></div>
-      <div class="row total"><span>Total, held in escrow</span><span class="tnum" data-ngn="₦248,000" data-usd="$162">₦248,000</span></div>
+      <div class="row total"><span>Total, held in escrow</span><span class="tnum" id="sumTotal" data-ngn="₦248,000" data-usd="$162">₦248,000</span></div>
       <div class="esc"><img class="seal" src="assets/seal-ivory.png" alt=""/><span>We hold your payment in escrow and release it only when you confirm your hair arrived and your install is done.</span></div>
-      <button class="btn btn-premium btn-block" data-pay>Pay ₦248,000, protected</button>
+      <button class="btn btn-premium btn-block" id="payAmt" data-pay data-ngn="Pay ₦248,000, protected" data-usd="Pay $162, protected">Pay ₦248,000, protected</button>
       <p style="font-size:11.5px;color:var(--muted);text-align:center;margin-top:10px">By paying, you agree to Wura’s Buyer Protection terms.</p>
       <div class="pay-badges" style="justify-content:center;margin-top:12px"><span>PAYSTACK</span><span>ESCROW</span><span>VERIFIED</span></div>
     </div>
@@ -110,7 +110,7 @@
 <section class="promise"><div class="wrap">
   <div class="head reveal"><h2>After you pay, here’s what happens.</h2><p class="lead" style="color:var(--stone);max-width:320px">Your money doesn’t move until you’re happy. That’s the whole point.</p></div>
   <div class="steps">
-    <div class="step reveal d1"><div class="n">01</div><h3>We hold your payment</h3><p>Your ₦248,000 sits in escrow. Nothing reaches the vendor or stylist yet.</p></div>
+    <div class="step reveal d1"><div class="n">01</div><h3>We hold your payment</h3><p>Your <span id="nextAmt">₦248,000</span> sits in escrow. Nothing reaches the vendor or stylist yet.</p></div>
     <div class="step reveal d2"><div class="n">02</div><h3>Hair ships, install happens</h3><p>Your verified unit is delivered, then Adaeze installs it at your appointment.</p></div>
     <div class="step reveal d3"><div class="n">03</div><h3>You confirm, we release</h3><p>Happy with your crown? We release the funds. Not happy? Open a dispute and we step in.</p></div>
   </div>
@@ -118,6 +118,28 @@
 
 <footer><div class="wrap"><div class="foot-grid"><div class="foot-brand"><div class="wordmark">WURA</div><p>Africa’s modern-luxury marketplace for hair and beauty. Verified hair, vetted stylists, one protected payment.</p><form class="newsletter" data-noop><input type="email" placeholder="Your email for new looks" aria-label="Email"/><button class="btn btn-gold btn-sm" type="submit">Join</button></form></div><div><h4>Shop</h4><ul><li><a href="looks.html">Looks</a></li><li><a href="shop.html">Hair by texture</a></li><li><a href="shop.html">Wigs & frontals</a></li><li><a href="shop.html">Bundles</a></li></ul></div><div><h4>Book</h4><ul><li><a href="stylists.html">Find a stylist</a></li><li><a href="stylists.html">Braiding</a></li><li><a href="stylists.html">Installs</a></li><li><a href="stylists.html">Colour</a></li></ul></div><div><h4>Wura</h4><ul><li><a href="index.html#how">How it works</a></li><li><a href="index.html#partner">Become a partner</a></li><li><a href="about.html">Our story</a></li><li><a href="#">Buyer protection</a></li></ul></div></div><div class="foot-bottom"><span>© 2026 Wura · Made in Lagos · The standard for real.</span><div class="pay-badges"><span>PAYSTACK</span><span>ESCROW</span><span>VERIFIED</span></div></div></div></footer>
 <div class="toast" id="toast"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="m5 13 4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Saved</span></div>
+<script src="js/pdp.js"></script>
+<script>
+(function(){
+  if(!window.WURA_PRODUCTS) return;
+  var id=new URLSearchParams(location.search).get("id");
+  var d=WURA_PRODUCTS[id]||WURA_PRODUCTS["lagos-glass"];
+  function txt(i,v){var e=document.getElementById(i);if(e)e.textContent=v;}
+  function price(i,n,u){var e=document.getElementById(i);if(e){e.dataset.ngn=n;e.dataset.usd=u;e.textContent=n;}}
+  var parts=(d.install||"Install · stylist").split(" · ");
+  var svc=parts[0], who=parts.slice(1).join(" · "), name=(who.split(",")[0]||"").trim();
+  var img=document.getElementById("ciHairImg"); if(img && d.images && d.images[0]){img.src="assets/"+d.images[0][0]+".jpg";}
+  txt("ciHairTitle",d.title); txt("ciHairMeta",d.vendor+" · "+d.city); price("ciHairPrice",d.ngn,d.usd);
+  txt("ciInstallTitle",svc); txt("ciInstallMeta",who+" · Sat 13 June, 11:00 AM"); price("ciInstallPrice",d.installNgn,d.installUsd);
+  txt("apptName",name+" · "+svc);
+  txt("sumHair",d.title); price("sumHairPrice",d.ngn,d.usd);
+  txt("sumInstall",svc+(name?" · "+name:"")); price("sumInstallPrice",d.installNgn,d.installUsd);
+  price("sumTotal",d.totalNgn,d.totalUsd);
+  price("nextAmt",d.totalNgn,d.totalUsd);
+  var pay=document.getElementById("payAmt"); if(pay){pay.dataset.ngn="Pay "+d.totalNgn+", protected"; pay.dataset.usd="Pay "+d.totalUsd+", protected"; pay.textContent="Pay "+d.totalNgn+", protected";}
+  document.title="Your bag · WURA";
+})();
+</script>
 <script src="js/wura.js"></script>
 </body>
 </html>
