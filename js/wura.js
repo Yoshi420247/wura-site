@@ -41,10 +41,10 @@
 
   /* cart / buy / book */
   var cart=parseInt((document.getElementById('cartCount')||{}).textContent||'0',10),cartCount=document.getElementById('cartCount');
-  window.wuraAdd=function(){cart++;if(cartCount)cartCount.textContent=cart;wuraToast('Added — your payment will be held in escrow');};
+  window.wuraAdd=function(){cart++;if(cartCount)cartCount.textContent=cart;wuraToast('Added. Your payment stays protected until you confirm.');};
   document.querySelectorAll('[data-buy]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();wuraAdd();});});
-  document.querySelectorAll('[data-book]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();wuraToast('Opening booking — deposit held in escrow');});});
-  document.querySelectorAll('[data-release]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();wuraToast('Protected by Wura escrow ✦');});});
+  document.querySelectorAll('[data-book]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();wuraToast('Opening booking. Your deposit stays protected.');});});
+  document.querySelectorAll('[data-release]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();wuraToast('Held safely by Wura ✦');});});
 
   /* currency toggle */
   document.querySelectorAll('.cur-toggle button').forEach(function(b){b.onclick=function(){
@@ -69,5 +69,5 @@
   document.querySelectorAll('.chip[data-filter]').forEach(function(c){c.onclick=function(){c.classList.toggle('on');};});
 
   /* newsletter / forms no-op */
-  document.querySelectorAll('form[data-noop]').forEach(function(f){f.onsubmit=function(e){e.preventDefault();wuraToast('Thank you — welcome to The Edit');};});
+  document.querySelectorAll('form[data-noop]').forEach(function(f){f.onsubmit=function(e){e.preventDefault();wuraToast('Welcome to The Edit. Looks worth wanting, in your inbox.');};});
 })();
