@@ -1,10 +1,10 @@
-/* WURA — shared interactions */
+/* WURA shared interactions */
 (function(){
   /* reveal + hairline */
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.14,rootMargin:'0px 0px -8% 0px'});
   document.querySelectorAll('.reveal,.hairline').forEach(function(el){io.observe(el);});
 
-  /* progressive "develop" — trigger on view and on image load */
+  /* progressive "develop": trigger on view and on image load */
   var dio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){setTimeout(function(){e.target.classList.add('developed');},100);dio.unobserve(e.target);}});},{threshold:.08});
   document.querySelectorAll('.ph.develop').forEach(function(el){
     dio.observe(el);
