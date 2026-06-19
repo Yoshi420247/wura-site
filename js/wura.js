@@ -70,4 +70,13 @@
 
   /* newsletter / forms no-op */
   document.querySelectorAll('form[data-noop]').forEach(function(f){f.onsubmit=function(e){e.preventDefault();wuraToast('Welcome to The Edit. Looks worth wanting, in your inbox.');};});
+
+  /* payment method selection */
+  document.querySelectorAll('.pay-opt').forEach(function(o){o.onclick=function(){document.querySelectorAll('.pay-opt').forEach(function(x){x.classList.remove('sel');});o.classList.add('sel');};});
+
+  /* remove a cart item */
+  document.querySelectorAll('[data-remove]').forEach(function(b){b.onclick=function(e){e.preventDefault();var item=b.closest('.cart-item'); if(item){item.style.transition='opacity .25s';item.style.opacity='0';setTimeout(function(){item.style.display='none';},250);} wuraToast('Removed from your bag');};});
+
+  /* pay (checkout) */
+  document.querySelectorAll('[data-pay]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();wuraToast('Payment received and held safe. We’ll confirm your order shortly.');});});
 })();
