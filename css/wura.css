@@ -142,7 +142,7 @@ header.nav.scrolled{border-bottom:1px solid var(--linen);box-shadow:0 8px 30px -
 .look-card .lc-foot{display:flex;align-items:center;justify-content:space-between;margin-top:auto}
 .look-card .price{font-size:18px}
 .look-card .price s{color:var(--stone);font-weight:400;font-size:14px;margin-right:6px}
-.card-seal{position:absolute;top:12px;left:12px;width:48px;height:48px;border-radius:999px;z-index:2}
+.ph img.card-seal{position:absolute;top:12px;left:12px;width:44px;height:44px;border-radius:999px;z-index:2;object-fit:contain;box-shadow:0 2px 10px -3px rgba(20,17,15,.4)}
 .heart{width:40px;height:40px;border:1px solid var(--linen);border-radius:999px;display:grid;place-items:center;transition:.2s;color:var(--obsidian)}
 .heart:hover{border-color:var(--oxblood)} .heart.on{background:var(--oxblood);border-color:var(--oxblood);color:#fff}
 @media(max-width:900px){.looks{grid-template-columns:1fr 1fr}}
